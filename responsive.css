@@ -1,0 +1,7 @@
+/* CSS to make Website Mobile Responsive */
+@media (max-width: 700px) {
+  nav {
+    width: 100%;
+
+  }
+}
