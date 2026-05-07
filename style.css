@@ -73,12 +73,12 @@ div.btn > button {
   font-size: 1.25rem;
   text-emphasis: none;
   cursor: pointer;
-  transition : all 0.9s linear 0.1s;
+  transition: all 0.9s linear 0.1s;
 }
 div.btn > button:hover {
   border-radius: 25px 0px 12px;
   background-color: #fff;
-  color : #000;
+  color: #000;
 }
 
 /* Home Section */
@@ -337,7 +337,8 @@ section div#contact {
   align-items: center;
   color: white;
   text-align: center;
-  background: #000000 url(./assets/leaf.png) right center / cover no-repeat scroll;
+  background: #000000 url(./assets/leaf.png) right center / cover no-repeat
+    scroll;
 }
 
 div#contact > img {
@@ -423,4 +424,57 @@ div.footer-links i {
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 0.5rem;
+}
+
+/* Add Animation on Box Or Text */
+
+.reveal {
+  opacity: 0;
+  background: transparent;
+  transform: translateY(100px);
+  transition: all 2s ease-in-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Reveal X */
+.revealx {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 2.5s ease-in-out;
+}
+/* Reveal X & -X */
+.revealx.active,
+.reveal-x.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Reveal-X */
+.reveal-x {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 2.5s ease-in-out;
+}
+
+/* Animation on Images */
+.sizex {
+  transform: translateX(120px) scale(0.5);
+  transition:
+    transform 2.5s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 0.8s ease;
+}
+
+.sizex.active,
+.size-x.active {
+  transform: translate(0) scale(1);
+}
+
+.size-x {
+  transform: translateX(-120px) scale(0.5);
+  transition:
+    transform 2.5s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 0.8s ease;
 }

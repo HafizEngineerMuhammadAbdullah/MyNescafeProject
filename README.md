@@ -53,7 +53,7 @@ This project focuses on UI design, layout structuring, and responsive web develo
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/HafizEngineerMuhammadAbdullah/MyNescafeProject
    ```
 
 2. Open the project folder:
