@@ -31,6 +31,9 @@ nav {
   width: 100%;
   padding: 1.25rem;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 /* For Nescafe Logo */
@@ -41,8 +44,8 @@ div.nescafe-logo {
 /* For Nescafe Image */
 div.nescafe-logo > img {
   display: block;
-  width: 12.5em;
-  height: 5em;
+  width: 12.5rem;
+  height: 5rem;
 }
 /* For Links */
 div.links {
@@ -55,7 +58,7 @@ div.links {
 div.links a {
   display: block;
   position: relative;
-  color: white;
+  color: rgb(206, 198, 196);
   text-decoration: none;
   padding-bottom: 10px;
   font:
@@ -203,8 +206,6 @@ div.recipes > p {
   color: #ffffffd8;
   overflow-y: hidden;
   text-align: center;
-  /* word-spacing: 0.05rem;
-  letter-spacing: 0.05rem; */
   line-height: 1.5;
 }
 
@@ -312,7 +313,7 @@ div.bottom-side > button {
 
 /* For Mission Content */
 section#Mission {
-  background: url(./assets/nescafe-rand.jpg) center / cover no-repeat fixed;
+  background: url(./assets/nescafe-back.avif) center / cover no-repeat fixed;
 }
 div.mission-content {
   display: flex;
@@ -377,7 +378,7 @@ section div#contact {
   align-items: center;
   color: white;
   text-align: center;
-  background: #000000 url(./assets/leaf.png) right center / cover no-repeat
+  background: #000000 url(./assets/leaf.png) right center / auto no-repeat
     scroll;
 }
 
