@@ -25,7 +25,7 @@ body {
 /* For Nav-Bar */
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 8rem;
   width: 100%;
@@ -35,10 +35,6 @@ nav {
 
 /* For Nescafe Logo */
 div.nescafe-logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   height: 100%;
   width: 12.5rem;
 }
@@ -48,19 +44,61 @@ div.nescafe-logo > img {
   width: 12.5em;
   height: 5em;
 }
-/* For Anchor Tag */
-a {
-  display: block;
-  text-decoration: none;
-}
-
 /* For Links */
 div.links {
   height: 4rem;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
-  column-gap: 100px;
+  column-gap: 2.4rem;
+}
+/* Navbar Links */
+div.links a {
+  display: block;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding-bottom: 10px;
+  font:
+    1.3rem Onest,
+    "sans-serif";
+}
+
+/* Create hidden underline */
+/* Create fake element after text. */
+div.links a::after {
+  /* Empty fake element. */
+  content: "";
+  /* Place freely. */
+  position: absolute;
+  /* Place at bottom-left of anchor. */
+  left: 0;
+  bottom: 0;
+  /* Hidden underline. */
+  width: 0%;
+  height: 3px;
+  background-color: red;
+  /* Animate width smoothly. */
+  transition: width 0.4s ease;
+}
+/* div.links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  width: 0;
+  height: 3px;
+
+  background: rgb(202, 9, 9);
+
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+} */
+
+/* On Hover */
+div.links a:hover::after {
+  /* Expand underline on hover. */
+  width: 100%;
 }
 
 /* Location Button */
@@ -73,6 +111,8 @@ div.btn > button {
   font-size: 1.25rem;
   text-emphasis: none;
   cursor: pointer;
+  margin-top: 1.6rem;
+  margin-right: 2rem;
   transition: all 0.9s linear 0.1s;
 }
 div.btn > button:hover {
@@ -429,8 +469,10 @@ div.footer-links i {
 /* Add Animation on Box Or Text */
 
 .reveal {
+  /* Hidden */
   opacity: 0;
   background: transparent;
+  /* Shifted */
   transform: translateY(100px);
   transition: all 2s ease-in-out;
 }
@@ -477,4 +519,12 @@ div.footer-links i {
   transition:
     transform 2.5s cubic-bezier(0.25, 1, 0.5, 1),
     opacity 0.8s ease;
+}
+
+.reveal,
+.revealx,
+.reveal-x,
+.sizex,
+.size-x {
+  will-change: transform, opacity;
 }
