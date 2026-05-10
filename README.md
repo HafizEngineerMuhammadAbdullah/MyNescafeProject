@@ -20,7 +20,6 @@
 
 ## 📸 Preview
 
-> *(Add a screenshot here — drag and drop your image into GitHub's README editor)*
 ![MY NESCAFE IMAGE](./assets/image.png)
 
 ---
