@@ -128,9 +128,12 @@ div.btn > button:hover {
 /* For Heading */
 #home {
   /* Syntax: image position / size repeat attachment color */
-  background:
+  /* background:
     linear-gradient(rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0)),
-    url("./assets/nescafe-background1.avif") center / cover no-repeat fixed;
+    url("./assets/nescafe-background1.avif") center / cover no-repeat fixed; */
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0)),
+    url("./assets/homeimg.jpg") center / cover no-repeat fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -358,7 +361,8 @@ div.bottom-side > button {
 
 /* For Mission Content */
 section#Mission {
-  background: url(./assets/nescafe-back.avif) center / cover no-repeat fixed;
+  /* background: url(./assets/nescafe-back.avif) center / cover no-repeat fixed; */
+  background: url(./assets/vid.gif) center / cover no-repeat fixed;
 }
 div.mission-content {
   display: flex;
