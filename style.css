@@ -26,6 +26,7 @@ html {
 /* For Body */
 body {
   font-family: "Nescafe";
+  overflow-x: hidden;
 }
 
 /* For Nav-Bar */
@@ -53,6 +54,7 @@ div.nescafe-logo > img {
   width: 12.5rem;
   height: 5rem;
 }
+
 /* For Links */
 div.links {
   height: 4rem;
@@ -60,6 +62,7 @@ div.links {
   align-items: flex-end;
   column-gap: 2.4rem;
 }
+
 /* Navbar Links */
 div.links a {
   display: block;
