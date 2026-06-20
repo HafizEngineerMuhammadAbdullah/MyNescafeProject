@@ -17,6 +17,12 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #a90505 transparent;
+}
+
 /* For Body */
 body {
   font-family: "Nescafe";
@@ -131,7 +137,7 @@ div.btn > button:hover {
   /* background:
     linear-gradient(rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0)),
     url("./assets/nescafe-background1.avif") center / cover no-repeat fixed; */
-    background:
+  background:
     linear-gradient(rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0)),
     url("./assets/homeimg.jpg") center / cover no-repeat fixed;
   display: flex;
@@ -179,7 +185,7 @@ div.btn > button:hover {
 }
 
 .down-arrow i {
-  text-shadow: 0 0 10px rgba(255,255,255,0.8);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 /* Animation */
@@ -278,6 +284,7 @@ section#products {
   background: url(./assets/nescafe-seeds1.jpg) center / cover no-repeat fixed;
   padding: 5rem 0px 0px;
 }
+
 /* Nescafe Gold */
 div.nescafe-gold,
 div.nescafe-classic {
@@ -285,12 +292,14 @@ div.nescafe-classic {
   justify-content: center;
   align-items: center;
 }
+
 div.our-brands {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 0px 1.25rem;
 }
+
 /* For Heading */
 div.our-brands > h1 {
   font:
@@ -298,6 +307,7 @@ div.our-brands > h1 {
     sans-serif;
   margin-top: 1.25rem;
 }
+
 /* For Paragraph */
 div.our-brands > p {
   font:
@@ -362,7 +372,7 @@ div.bottom-side > button {
 /* For Mission Content */
 section#Mission {
   /* background: url(./assets/nescafe-back.avif) center / cover no-repeat fixed; */
-  background: url(./assets/vid.gif) center / cover no-repeat fixed;
+  background: url(./assets/video.gif) center / cover no-repeat fixed;
 }
 div.mission-content {
   display: flex;
@@ -577,4 +587,15 @@ div.footer-links i {
 .sizex,
 .size-x {
   will-change: transform, opacity;
+}
+
+/*------- custom scrollbar -------*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#000000, #a90505);
 }
